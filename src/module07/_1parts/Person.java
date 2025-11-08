@@ -12,13 +12,13 @@ public class Person
      {
         name = initName;
         email = initEmail;
-        phoneNumber = initPhone;
+        phoneNumber = initPhone; //initialize instant variables
      }
      
      // Print all the data for a person
      public void print()
      {
-       System.out.println("Name: " + name);
+       System.out.println("Name: " + name);  //instant variables in blue
        System.out.println("Email: " + email);
        System.out.println("Phone Number: " + phoneNumber);
      }
@@ -29,8 +29,8 @@ public class Person
         // call the constructor to create a new person
         Person p1 = new Person("Sana", "sana@gmail.com", "123-456-7890");
         // call p1's print method
-        p1.print();
+        p1.print();  //run the print method using p1 as an instant
         Person p2 = new Person("Jean", "jean@gmail.com", "404 899-9955");
-        p2.print();
+        p2.print();  //call p2's print method
      }
   }

@@ -18,6 +18,19 @@ public class Student
     { 
       return id + ": " + name + ", " + email;
     }
+
+    //accessor(getter)
+    public int getId(){
+      return id;
+    }
+
+    //System.out.println(me.getId());  //call the getId method
+
+    //(setter: allows to change)
+    public void setName(String newName){
+      name = newName;
+    }
+
     
     // main method for testing
     public static void main(String[] args)
