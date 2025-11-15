@@ -5,16 +5,17 @@ class Student extends Person
    private int id;
    private static int nextId = 0;
    
-   public Student(String theName)
+   public Student(String theName) //constructor
    {
      super(theName);
      id = nextId;
      nextId++;
    }
    
-   public String getFood()
+   @Override
+   public String getFood() //
    {
-      String output = super.getFood();
+      String output = super.getFood(); //go to the getFood superclass --> "Hamburger"
       return output + " and Taco";
    }
    
@@ -23,4 +24,11 @@ class Student extends Person
    {
       this.id = theId;
    }
+
+   public static void main(String[] args)
+      { // the p1 is type person
+         Person p1 = new Student("Sara"); //creating object
+         System.out.println(p1.getFood()); //"Hamburger and Taco"
+      }
+
 } 

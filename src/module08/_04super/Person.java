@@ -2,15 +2,15 @@ package module08._04super;
 
 public class Person 
 {
-      private String name = null;
+      private String name = null; //instance variable
       
-      public Person(String theName)
+      public Person(String theName) //constuctor
       {
          name = theName;
       }
       
-      public String getFood() 
-      {
+      public String getFood() //a method called getFood
+      { //constructor: super();
          return "Hamburger";
       }
       

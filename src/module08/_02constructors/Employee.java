@@ -23,5 +23,8 @@ public class Employee extends Person
       Employee emp = new Employee("Dani");
       System.out.println(emp.getName());
       System.out.println(emp.getId());
+      Employee emp2 = new Employee("Helen");
+      System.out.println(emp2.getName());
+      System.out.println(emp2.getId());
    }
 }

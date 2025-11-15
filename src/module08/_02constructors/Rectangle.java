@@ -7,8 +7,8 @@ class Rectangle
 
     public Rectangle()
     {  
-       length = 1;
-       width = 1;
+       length = 2;
+       width = 2;
     }
 
     public Rectangle(int l, int w) 
